@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 08, 2022 at 08:12 AM
+-- Generation Time: Nov 17, 2022 at 11:01 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -101,7 +101,7 @@ CREATE TABLE `company` (
 --
 
 INSERT INTO `company` (`companyid`, `name`, `address`, `email`, `salestaxno`, `currency`, `currencysign`, `currsignplace`, `decimalseperator`, `excurrency`, `dateformat`, `exdate`, `taxtype`, `image`, `printimageornot`, `tax1name`, `tax1rate`, `printtax1`, `tax2name`, `tax2rate`, `printtax2`, `menu_and_wincolour`, `attachment_file_type`, `miscellanoustab_cbutton1`, `miscellanoustab_cbutton2`, `miscellanoustab_cbutton3`, `miscellanoustab_cbutton4`, `miscellanoustab_cbutton5`, `miscellanoustab_cbutton6`, `Estimate_prefix`, `est_Headerboxbackgroundcolor`, `Customizeestimatetextlabels`, `Defaultestimatetemplate`, `Customizeestimatetextlabels1`, `Customizeestimatetextlabels2`, `Customizeestimatetextlabels3`, `Customizeestimatetextlabels4`, `Customizeestimatetextlabels5`, `Startingestimatenumber`, `Predefinedtextforestimates`, `adv_Selectedtemplatepreview`, `porder_prefix`, `headrebox_color`, `starting_porderno`, `text_label1`, `text_label2`, `text_label3`, `text_label4`, `text_label5`, `text_label6`, `text_label7`, `predefindterms_porder`, `email_template`, `text_field`) VALUES
-(36, 'company_ekm', 'ekm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'infox@gmail.com', '8888', 'INR', '₨', 'before amount', '.', '', 'Default', '2022-10-07', '2', 'yes.png', 0, '14.0% VAT (100%)Choose...Choose...Choose...Choose...Choose...', 0.14, 1, '', 0, 0, NULL, '', 0, 0, 0, 0, 0, 0, 'EST', 'Default', 'Estimate', 'Professional 1 (logo on left side)', 'Estimate#', 'Estimate date', 'Due date', 'Estimate to', 'Estimate total', 0, '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Professional 1 (logo on left side)', 'P.ORD', '0', 0, 'Purchase Order', 'P.Order#', 'P.Order Date', 'Due date', 'Vendor', 'Delivery to', 'P.Order total', '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Purchase Order E-Mail template', '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n');
+(36, 'company_ekm', 'ekm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'infox@gmail.com', '8888', 'INR', '₨', 'before amount', '.', '', 'Default', '2022-10-21', '2', 'yes.png', 0, 'IGST(18%)', 0.18, 1, '5.0% VAT (100%)choose..', 0.5, 0, NULL, '', 0, 0, 0, 0, 0, 0, 'EST', 'Default', 'Estimate', 'Professional 1 (logo on left side)', 'Estimate#', 'Estimate date', 'Due date', 'Estimate to', 'Estimate total', 0, '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Professional 1 (logo on left side)', 'P.ORD', '0', 0, 'Purchase Order', 'P.Order#', 'P.Order Date', 'Due date', 'Vendor', 'Delivery to', 'P.Order total', '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Purchase Order E-Mail template', '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n');
 
 -- --------------------------------------------------------
 
@@ -144,12 +144,15 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`customerid`, `companyid`, `category`, `status`, `businessname`, `businessaddress`, `shipname`, `shipaddress`, `contactperson`, `cpemail`, `cptelno`, `cpfax`, `cpmobileforsms`, `shipcontactperson`, `shipcpemail`, `shipcptelno`, `shipcpfax`, `taxexempt`, `specifictax1`, `discount`, `country`, `city`, `customertype`, `notes`, `customerno`, `specifictax2`, `vatregnumber`) VALUES
-(19, NULL, 'product', '1', 'company_IT', 'ekm', 'kkkk', 'dubai', '1234', 'cmp@gmail.com', NULL, NULL, NULL, '12345', 'ad@gmail.com', NULL, NULL, '1', 0, 0, 'america', NULL, 'Client', NULL, '123', 0, NULL),
+(19, NULL, 'product', '1', 'company_IT', 'ekm\n', 'kkkk', 'dubai\n', '1234', 'cmp@gmail.com', 'None', 'None', 'None', '12345', 'ad@gmail.com', 'None', 'None', '1', 0, 0, 'america', 'None', 'Client', 'None\n', '123', 0, NULL),
 (20, NULL, 'product', '1', 'anu', 'tcr\n', NULL, NULL, 'ann', 'ann@gmail.com', '9495332710', '2333', '9495332710', NULL, NULL, NULL, NULL, '1', 23, 12, NULL, NULL, 'Both(client/vendor)', NULL, '099', NULL, NULL),
 (21, NULL, 'product', '1', 'annu', 'afdg\n', NULL, NULL, 'qq', 'a@gmail.com', '', '', '9495332710', NULL, NULL, NULL, NULL, '1', 0, 0, NULL, NULL, 'Both(client/vendor)', NULL, '344', NULL, NULL),
 (22, NULL, 'product', '1', 'annnuuuuuuu', 'tvm\n', NULL, NULL, 'hhhhnnnnn', 's@gmail.com', '9495332710', '', '9744896278', NULL, NULL, NULL, NULL, '1', 10, 12, NULL, NULL, 'Both(client/vendor)', NULL, '888', NULL, NULL),
 (23, NULL, 'product', '1', 'textiles', 'ekm\n', NULL, NULL, 'rahul', 'rahul@gmail.com', '9656195265', '', '9495332710', NULL, NULL, NULL, NULL, '1', 22, 2, NULL, NULL, 'Both(client/vendor)', NULL, '12345', NULL, NULL),
-(24, NULL, '', '1', 'infox', 'ekm\n', '', '\n', 'anjana', 'infox@gmail.com', '9857678456', '', '9876563456', '', '', '', '', '1', 0, 10, '', '', 'Vender', '\n', '122', 0, NULL);
+(24, NULL, '', '1', 'infox', 'ekm\n', '', '\n', 'anjana', 'infox@gmail.com', '9857678456', '', '9876563456', '', '', '', '', '1', 0, 10, '', '', 'Vender', '\n', '122', 0, NULL),
+(25, NULL, 'product', '1', 'shadow', 'tvm\nll\n\n\n\n\n', 'agency', 'ekm\n', '9876535612', 'shadow@gmail.com', '9978654367', '', '', 'akhil', 'akhil@gmail.com', '9087675643', '', '1', 15, 50, 'India', 'mumbai', 'Vendor', 'aaaaa\n', '223355', 0, NULL),
+(26, NULL, 'product', '1', 'agency1', 'aluva\n\ngg\n', NULL, NULL, 'ankha', 'ankha@gmail.com', '9089765432', '', '9878564534', NULL, NULL, NULL, NULL, '1', 12, 20, NULL, NULL, 'Vendor', NULL, '112233', 0, NULL),
+(27, NULL, '{}', '1', 'clothing', 'ekm\nsss\n\n', 'None', 'None\n', 'abhi', 'abhi@gmail.com', '9878675467', '', '9878654345', 'None', 'None', 'None', 'None', '1', 30, 23, 'None', 'None', 'Both(Client/Vender)', 'None\n', 'abhi', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -223,7 +226,11 @@ CREATE TABLE `estimate` (
 --
 
 INSERT INTO `estimate` (`estimateid`, `estimate_number`, `estdate`, `duedate`, `status`, `emailon`, `printon`, `smson`, `esttot`, `totpaid`, `balance`, `extracostname`, `extracost`, `template`, `salesper`, `discourate`, `tax1`, `category`, `businessname`, `businessaddress`, `shipname`, `shipaddress`, `cpemail`, `cpmobileforsms`, `title_text`, `header_text`, `footer_text`, `companyid`, `customerid`, `Productserviceid`, `term_of_payment`, `terms`, `comments`, `private_notes`, `tax2`, `orderref`, `subtotal`, `extracostt`, `discount`, `ttax1`, `ttax2`) VALUES
-(2147483650, 'EST00000/2022', '2022-09-30', '2022-09-30', 'Draft', 'Never', 'Never', NULL, 100, 0, 100, '', 0, 'Professional 1 (logo on left side)', 'Administrator', 0, 0, '', 'annu', 'afdg\n\n', 'annu', 'afdg\n\n', 'a@gmail.com', '9495332710', '', '', '', NULL, NULL, NULL, '', '\n\n\n\n\n\n', '', '', 0, '', 100, 0, 0, 0, 0);
+(2147483650, 'EST00000/2022', '2022-09-30', '2022-09-30', 'Draft', 'Never', 'Never', NULL, 100, 0, 100, '', 0, 'Professional 1 (logo on left side)', 'Administrator', 0, 0, '', 'annu', 'afdg\n\n', 'annu', 'afdg\n\n', 'a@gmail.com', '9495332710', '', '', '', NULL, NULL, NULL, '', '\n\n\n\n\n\n', '', '', 0, '', 100, 0, 0, 0, 0),
+(2147483651, 'EST00001/2022', '2022-10-18', '2022-10-18', 'Draft', 'Never', 'Never', NULL, 120000, 0, 120000, '', 0, 'Professional 1 (logo on left side)', 'Administrator', 0, 0, '', 'infox', 'ekm\n\n', 'infox', 'ekm\n\n', 'infox@gmail.com', '9876563456', '', '', '', NULL, NULL, NULL, '', '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', '', '', 1, '', 120000, 0, 0, 0, 0),
+(2147483652, 'EST00002/2022', '2022-10-21', '2022-10-21', 'Draft', 'Never', 'Never', NULL, 120156, 0, 120156, '', 0, 'Professional 1 (logo on left side)', 'Administrator', 0, 0, '', 'textiles', 'ekm\n\n', 'textiles', 'ekm\n\n', 'rahul@gmail.com', '9495332710', '', '', '', NULL, NULL, NULL, '', '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', '', '', 1, '', 120012, 0, 0, 144, 0),
+(2147483653, 'EST00003/2022', '2022-11-12', '2022-11-12', 'Draft', 'Never', 'Never', NULL, 240432, 0, 240432, '', 0, 'Professional 1 (logo on left side)', 'Administrator', 0, 0, '', 'company_IT', 'ekm\n', 'company_IT', 'ekm\n', 'cmp@gmail.com', '', '', '', '', NULL, NULL, NULL, 'net banking', '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', '', '', 0, '', 240000, 0, 0, 432, 0),
+(2147483654, 'EST00004/2022', '2022-11-14', '2022-11-14', 'Invoiced', 'Never', 'Never', NULL, 480864, 0, 480864, '', 0, 'Professional 1 (logo on left side)', 'Administrator', 0, 0, '', 'shadow', 'tvm\n\n', 'shadow', 'tvm\n\n', 'shadow@gmail.com', '', '', '', '', NULL, NULL, NULL, '', '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', '', '', 0, '', 480000, 0, 0, 864, 0);
 
 -- --------------------------------------------------------
 
@@ -259,7 +266,8 @@ CREATE TABLE `expenses` (
 --
 
 INSERT INTO `expenses` (`expensesid`, `customerid`, `companyid`, `expense_amount`, `date`, `vendor`, `catagory`, `description`, `staff_members`, `taxable`, `customer`, `image`, `notes`, `rebillable`, `invoiced`, `id_sku`, `rebill_amount`, `assign_customer`, `receipt`, `tax2`) VALUES
-(76, NULL, NULL, '₨', '2022-10-06', 'infox', 'Default', 'afggg', 'Administrator', '0', 'textiles', NULL, '', '0', NULL, '', '', '1', '1', '0');
+(76, NULL, NULL, '₨', '2022-10-06', 'infox', 'Default', 'afggg', 'Administrator', '0', 'textiles', NULL, '', '0', NULL, '', '', '1', '1', '0'),
+(77, NULL, NULL, '₨48', '2022-11-16', 'clothing', 'Default', 'aaaa', 'Administrator', '0', 'anu', NULL, '', '0', NULL, '', '', '1', '0', '0');
 
 -- --------------------------------------------------------
 
@@ -350,13 +358,19 @@ CREATE TABLE `invoice` (
 --
 
 INSERT INTO `invoice` (`invoiceid`, `invoice_number`, `invodate`, `duedate`, `status`, `emailon`, `printon`, `smson`, `invoicetot`, `totpaid`, `balance`, `extracostname`, `extracost`, `template`, `salesper`, `discourate`, `tax1`, `category`, `businessname`, `businessaddress`, `shipname`, `shipaddress`, `cpemail`, `cpmobileforsms`, `recurring_period`, `recurring_period_month`, `next_invoice`, `stop_recurring`, `companyid`, `customerid`, `Productserviceid`, `discount`, `orderid`, `estimateid`, `paymentid`, `terms`, `tax2`, `totalbeforetax`, `quantity`, `title_text`, `header_text`, `footer_text`, `term_of_payment`, `ref`, `comments`, `privatenotes`, `documentid`, `recurring_check`, `paid_n_closed`, `subtotal`, `stop_recurring_check`) VALUES
-(90, 'INV00005/2022', '2022-09-25', '2022-09-25', 'Draft', 'Never', 'Never', NULL, 12, 12, 0, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'company_IT', 'ekm\n\n\n\n', 'kkkkk', 'dubai\n\n\n', 'cmp@gmail.com', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\nInvoices are payable on receipt unless other terms, negotiated and noted on the Invoice. By accepting delivery of goods, Buyer agrees to pay the invoiced cost for those goods, and agrees to be bound to these contract terms. No acceptance may vary these terms unless specifically agreed in writing by Seller\n', 0, NULL, 1, '', '', '', '', '', '\n\n', '\n\n', NULL, 0, NULL, 12, 0),
-(91, 'INV00006/2022', '2022-09-26', '2022-09-26', 'Draft', 'Never', 'Never', NULL, 0, 0, 0, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'company_IT', 'ekm\n\n\n\n', 'kkkkk', 'dubai\n\n\n', 'cmp@gmail.com', '', 1, 'Month(s)', '2022-10-30', '2022-09-16', NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n', 0, NULL, 0, '', '', '', '', '', '\n', '\n', NULL, 1, NULL, 0, 1),
-(93, 'INV00008/2022', '2022-09-28', '2022-09-28', 'Draft', 'Never', 'Never', NULL, 112, 0, 112, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'company_IT', 'ekm\n', 'kkkk', 'dubai\n', 'cmp@gmail.com', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n', 0, NULL, 1, '', '', '', '', '', '\n', '\n', NULL, 0, NULL, 112, 0),
-(96, 'INV00009/2022', '2022-09-29', '2022-09-29', 'Draft', 'Never', 'Never', NULL, 12, 0, 12, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'annu', 'afdg\n\n', '', '\n', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n', 0, NULL, 1, '', '', '', '', '', '\n', '\n', NULL, 0, NULL, 12, 0),
-(97, 'INV000010/2022', '2022-09-30', '2022-09-30', 'Draft', 'Never', 'Never', NULL, 100, 0, 100, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'annu', 'afdg\n\n', '', '\n', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n', 0, NULL, 1, '', '', '', '', '', '\n', '\n', NULL, 0, NULL, 100, 0),
-(98, 'INV000011/2022', '2022-10-03', '2022-10-03', 'Draft', 'Never', 'Never', NULL, 120000, 0, 120000, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'annu', 'afdg\n\n\n', '', '\n\n', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n\n', 0, NULL, 1, '', '', '', '', '', '\n\n', '\n\n', NULL, 0, NULL, 120000, 0),
-(99, 'INV000012/2022', '2022-10-06', '2022-10-06', 'Draft', 'Never', 'Never', NULL, 0, 0, 0, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'annnuuuuuuu', 'tvm\n\n', '', '\n', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n', 0, NULL, 0, '', '', '', '', '', '\n', '\n', NULL, 0, NULL, 0, 0);
+(96, 'INV00009/2022', '2022-09-29', '2022-09-29', 'Draft', 'Never', 'Never', NULL, 12, 12, 0, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'annu', 'afdg\n\n\n', '', '\n\n', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n\n', 0, NULL, 1, '', '', '', '', '', '\n\n', '\n\n', NULL, 0, NULL, 12, 0),
+(99, 'INV000012/2022', '2022-10-06', '2022-10-06', 'Draft', 'Never', 'Never', NULL, 1202160, 0, 1202160, '', 0, 'Professional 1 (logo on left side)', '', 0, 2160, '', 'annnuuuuuuu', 'tvm\n\n\n\n', '', '\n\n\n', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n\n\n', 0, NULL, 10, '', '', '', '', '', '\n\n\n', '\n\n\n', NULL, 0, 0, 1200000, 0),
+(100, 'INV000013/2022', '2022-10-17', '2022-10-17', 'Draft', 'Never', 'Never', NULL, 100, 0, 100, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'infox', 'ekm\n\n', '', '\n\n', 'infox@gmail.com', '9876563456', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n', 0, NULL, 1, '', '', '', '', '', '\n', '\n', NULL, 0, NULL, 100, 0),
+(101, 'INV000014/2022', '2022-10-17', '2022-10-17', 'Draft', 'Never', 'Never', NULL, 117612, 117612, 0, '', 0, 'Professional 1 (logo on left side)', '', 2, 0, '', 'textiles', 'ekm\n\n', '', '\n', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2400, NULL, NULL, NULL, '\n', 0, NULL, 1, '', '', '', '', '', '\n', '\n', NULL, 0, NULL, 117612, 0),
+(103, 'INV000016/2022', '2022-10-18', '2022-10-18', 'Draft', 'Never', 'Never', NULL, 120000, 0, 120000, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'infox', 'ekm\n\n', '', '\n\n', 'infox@gmail.com', '9876563456', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n', 0, NULL, 1, '', '', '', 'net banking', '1234', '\n', '\n', NULL, 0, NULL, 120000, 0),
+(104, 'INV000017/2022', '2022-10-18', '2022-10-18', 'Draft', 'Never', 'Never', NULL, 120000, 120000, 0, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'textiles', 'ekm\n\n', '', '\n', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n', 0, NULL, 1, '', '', '', '', '', '\n', '\n', NULL, 0, NULL, 120000, 0),
+(105, 'INV000018/2022', '2022-10-21', '2022-10-21', 'Void', 'Never', 'Never', NULL, 0, 0, 0, '', 0, 'Professional 1 (logo on left side)', '', 0, 216, '', 'company_IT', 'ekm\n\n', 'kkkk', 'dubai\n\n', 'cmp@gmail.com', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n\n', 0, NULL, 1, '', '', '', '', '', '\n\n', '\n\n', NULL, 0, 0, 0, 0),
+(106, 'INV000019/2022', '2022-11-13', '2022-11-13', 'Draft', 'Never', 'Never', NULL, 120216, 0, 120216, '', 0, 'Professional 1 (logo on left side)', '', 0, 216, '', 'agency1', 'aluva\n\n', '', '\n', '', '', 1, 'Day(s)', '2022-11-14', '2022-11-04', NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n', 0, NULL, 1, '', '', '', 'net banking', '333', '\n', '\n', NULL, 1, NULL, 120000, 1),
+(109, 'INV000022/2022', '2022-11-14', '2022-11-14', 'Draft', 'Never', 'Never', NULL, 120, 0, 120, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'clothing', 'ekm\n\n', '', '\n', '', '', 1, 'Month(s)', '2022-11-14', '2022-11-03', NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n', 0, NULL, 1, '', '', '', '', '', '\n', '\n', NULL, 1, NULL, 120, 1),
+(110, 'INV000023/2022', '2022-11-14', '2022-11-14', 'Draft', 'Never', 'Never', NULL, 480864, 0, 480864, '', 0, 'Professional 1 (logo on left side)', 'Administrator', 0, 864, '', 'shadow', 'tvm\n\n', 'shadow', 'tvm\n\n', 'shadow@gmail.com', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 0, NULL, 0, '', '', '', '', 'EST00004/2022', '', '', NULL, 0, NULL, 480000, 0),
+(111, 'INV000024/2022', '2022-10-21', '2022-10-21', 'Draft', 'Never', 'Never', NULL, 117698, 0, 117698, '', 0, 'Professional 1 (logo on left side)', '', 2, 0, '', 'company_IT', 'ekm\n', 'kkkk', 'dubai\n', 'cmp@gmail.com', '1234', 1, 'Month(s)', '2022-11-16', '2022-11-16', NULL, NULL, NULL, 2402, NULL, NULL, NULL, '\n', 0.5, NULL, 1, '', '', '', '', 'ORD00004/2022', '\n', '\n', NULL, 1, NULL, 117698, 1),
+(112, 'INV000025/2022', '2022-10-21', '2022-10-21', 'Paid', 'Never', 'Never', NULL, 117698, 117698, 0, '', 0, 'Professional 1 (logo on left side)', '', 2, 0, '', 'company_IT', 'ekm\n\n', 'kkkk', 'dubai\n\n', 'cmp@gmail.com', '1234', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2402, NULL, NULL, NULL, '\n\n', 0.5, NULL, 1, '', '', '', '', 'ORD00004/2022', '\n\n', '\n\n', NULL, 0, 1, 117698, 0),
+(113, 'INV000026/2022', '2022-10-18', '2022-10-18', 'Draft', NULL, NULL, NULL, 240012, 0, 0, '', 0, 'Professional 1 (logo on left side)', '', 1, 0, '', 'textiles', 'ekm\n', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '', 0.5, NULL, 0, '', '', '', 'net banking', 'ORD00003/2022', '', '', NULL, 0, NULL, 240012, 0);
 
 -- --------------------------------------------------------
 
@@ -414,7 +428,7 @@ CREATE TABLE `invoice_settings` (
 --
 
 INSERT INTO `invoice_settings` (`invoice_prefix`, `starting_invoice_number`, `bgcolour`, `invoice`, `invoice2`, `invoice_date`, `order_ref`, `terms`, `invoice_to`, `ship_to`, `id_sku`, `product_service`, `quantity`, `description`, `unit_price`, `price`, `subtotal`, `discount`, `discount_rate`, `tax1`, `invoice_total`, `total_paid`, `balance`, `terms_conditions`, `tax_exempted`, `page`, `of`, `terms_notes`, `settingsid`, `companyid`) VALUES
-('INV', '1', 'Default', 'Invoice\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoice#\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoice date\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Order ref.#\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Terms\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoice to\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Ship to\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'ID/SKU\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Product/Service\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Quantity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Description\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Unit Price\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Price\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Subtotal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Discount\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Discount rate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'TAX1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoice Total\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Total Paid\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Balance\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Terms and Conditions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Tax Exempted\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Page\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'of\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoices are payable on receipt unless other terms, negotiated and noted on the Invoice. By accepting delivery of goods, Buyer agrees to pay the invoiced cost for those goods, and agrees to be bound to these contract terms. No acceptance may vary these terms unless specifically agreed in writing by Seller\n\n\n\n', 0, NULL);
+('INV', '1', 'Default', 'Invoice\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoice#\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoice date\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Order ref.#\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Terms\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoice to\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Ship to\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'ID/SKU\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Product/Service\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Quantity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Description\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Unit Price\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Price\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Subtotal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Discount\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Discount rate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'TAX1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoice Total\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Total Paid\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Balance\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Terms and Conditions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Tax Exempted\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Page\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'of\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoices are payable on receipt unless other terms, negotiated and noted on the Invoice. By accepting delivery of goods, Buyer agrees to pay the invoiced cost for those goods, and agrees to be bound to these contract terms. No acceptance may vary these terms unless specifically agreed in writing by Seller\n\n\n\n', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -440,7 +454,13 @@ CREATE TABLE `markinvoice` (
 --
 
 INSERT INTO `markinvoice` (`payment_id`, `payment_date`, `paid_by`, `description`, `amount`, `invoice_number`, `fully_paid`, `payment_reciept`, `attach_invoice`, `invoice_balance`) VALUES
-(29, '2022-09-25', '12', 'hhhhhhhhh', '12.0', 'INV00005/2022', 1, '0', 0, '0.0');
+(30, '2022-10-17', 'cash on delivery\r\n', '', '117611.76', 'INV000014/2022', 1, '0', 0, '0.0'),
+(31, '2022-10-18', 'net banking', '', '120000.0', 'INV000017/2022', 1, '1', 1, '0.0'),
+(32, '2022-11-16', 'cash on delivery\r\n', 'paied', '117698.0', 'INV000025/2022', 1, '1', 0, '0.0'),
+(33, '2022-11-16', 'net banking', '(VOID)', '0', 'INV000012/2022', 0, '0', 0, '0.0'),
+(34, '2022-11-16', 'cash on delivery\r\n', 'paid', '12.0', 'INV00009/2022', 0, '0', 0, '0.0'),
+(35, '2022-11-16', 'net banking', 'lllll', '100.0', 'INV000013/2022', 1, '0', 0, '0.0'),
+(36, '2022-11-16', 'net banking', 'paid', '120.0', 'INV000022/2022', 0, '0', 0, '0.0');
 
 -- --------------------------------------------------------
 
@@ -466,8 +486,10 @@ CREATE TABLE `markpinvoice` (
 --
 
 INSERT INTO `markpinvoice` (`payment_id`, `payment_date`, `paid_by`, `description`, `amount`, `pinvoice_number`, `fully_paid`, `payment_reciept`, `attach_pinvoice`, `pinvoice_balance`) VALUES
-(0, '2022-10-06', 'net banking', '', '124.0', 'PINV00009/2022', 1, '0', 0, '0.0'),
-(0, '2022-10-06', 'cash on delivery\r\n', '', '120000.0', 'PINV00009/2022', 1, '0', 0, '0.0');
+(1, '2022-10-06', 'net banking', '', '124.0', 'PINV00009/2022', 1, '0', 0, '0.0'),
+(2, '2022-10-06', 'cash on delivery\r\n', '', '120000.0', 'PINV00009/2022', 1, '0', 0, '0.0'),
+(3, '2022-10-29', 'net banking', 'paid', '120228.0', 'PINV000017/2022', 0, '0', 0, '0.0'),
+(4, '2022-11-17', 'cash on delivery\r\n', 'ooooooo', '240444.0', 'PINV000019/2022', 1, '0', 0, '0.0');
 
 -- --------------------------------------------------------
 
@@ -523,7 +545,9 @@ CREATE TABLE `orders` (
 
 INSERT INTO `orders` (`orderid`, `order_date`, `due_date`, `businessname`, `status`, `emailed_on`, `printed_on`, `sms_on`, `Order_total`, `extra_cost_name`, `extra_cost`, `template`, `sales_person`, `discount_rate`, `tax1`, `category`, `businessaddress`, `shipname`, `shipaddress`, `cpemail`, `cpmobileforsms`, `companyid`, `Productserviceid`, `customerid`, `sum_discount`, `sum_tax`, `sum_subtotal`, `private_notes`, `totalbeforetax`, `tax2`, `sum_tax2`, `order_number`, `terms_of_payment`, `title_text`, `page_header_text`, `footer_text`, `terms_notes`, `comments`, `due_datecheck`) VALUES
 (92, '2022-09-30', '2022-09-30', 'annnuuuuuuu', 'Draft', '0000-00-00', '0000-00-00', NULL, 100, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'tvm\n', '', '', '', '', NULL, NULL, NULL, 0, 0, 100, '', '100.0', '0', '0.00', 'ORD00001/2022', '', '', '', '', '', '', '1'),
-(93, '2022-10-01', '2022-10-01', 'annnuuuuuuu', 'Draft', '0000-00-00', '0000-00-00', NULL, 100, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'tvm\n', '', '', '', '', NULL, NULL, NULL, 0, 0, 100, '', '100.0', '0', '0.00', 'ORD00002/2022', 'cash on delivery\r\n', '', '', '', '', '', '1');
+(93, '2022-10-01', '2022-10-01', 'annnuuuuuuu', 'Draft', '0000-00-00', '0000-00-00', NULL, 100, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', 'tvm\n', '', '', '', '', NULL, NULL, NULL, 0, 0, 100, '', '100.0', '0', '0.00', 'ORD00002/2022', 'cash on delivery\r\n', '', '', '', '', '', '1'),
+(94, '2022-10-18', '2022-10-18', 'textiles', 'Invoiced', '0000-00-00', '0000-00-00', NULL, 240012, '', 0, 'Professional 1 (logo on left side)', '', 1, 0, '', 'ekm\n', '', '', '', '', NULL, NULL, NULL, 0, 0, 240012, '', '240012.0', '0.5', '0.00', 'ORD00003/2022', 'net banking', '', '', '', '', '', '1'),
+(95, '2022-10-21', '2022-10-21', 'company_IT', 'Invoiced', '0000-00-00', '0000-00-00', NULL, 118899, '', 0, 'Professional 1 (logo on left side)', '', 2, 0, '', 'ekm', 'kkkk', 'dubai', 'cmp@gmail.com', '1234', NULL, NULL, NULL, 1201, 0, 118899, '', '120100.0', '0.5', '0.00', 'ORD00004/2022', 'net banking', '', '', '', '', '', '1');
 
 -- --------------------------------------------------------
 
@@ -551,7 +575,7 @@ CREATE TABLE `order_settings` (
 --
 
 INSERT INTO `order_settings` (`order_prefix`, `starting_order_number`, `bgcolour`, `orders`, `order2`, `order_date`, `due_date`, `order_to`, `order_total`, `footer_note`, `companyid`, `settingsid`) VALUES
-('ORD', '1', 'Default', 'Order\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Order#\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Order date\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Due date\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Order to\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Order total\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoices are payable on receipt unless other terms, negotiated and noted on the invoice. By accepting delivery of goods, Buyer agrees to pay the invoiced cost for those goods, and agrees to be bound to these contract terms. No acceptance may vary these te', NULL, 0);
+('ORD', '1', 'Default', 'Order\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Order#\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Order date\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Due date\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Order to\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Order total\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'Invoices are payable on receipt unless other terms, negotiated and noted on the invoice. By accepting delivery of goods, Buyer agrees to pay the invoiced cost for those goods, and agrees to be bound to these contract terms. No acceptance may vary these te', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -583,6 +607,13 @@ CREATE TABLE `payments` (
   `pinvoiceid` int(11) NOT NULL,
   `payment_pinvoice` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `payments`
+--
+
+INSERT INTO `payments` (`invoiceid`, `companyid`, `show_paid`, `send_payment`, `insert_paypal`, `attach_updated`, `payment_receipt`, `payment_invoice`, `amount_received`, `description`, `payment_received`, `payment_rece`, `payment_date`, `payment_amount`, `total_amount`, `total_paid`, `balance_due`, `prefix`, `load_logo`, `load_button`, `pinvoiceid`, `payment_pinvoice`) VALUES
+(0, NULL, 1, 1, 0, 0, 'Payment Receipt', 'Payment for Invoice#', 'Amount received from:', 'Description:', 'Payment Received in:', 'Payment Receipt#:', 'Payment Date:', 'Payment Amount:', 'Total Amount Due', 'Total Paid:', 'Balance Due', 'RCPT', NULL, NULL, 0, '');
 
 -- --------------------------------------------------------
 
@@ -623,18 +654,27 @@ CREATE TABLE `pinvoice` (
   `paid_n_close` int(11) NOT NULL,
   `subtotal` float NOT NULL,
   `cpemail` varchar(255) DEFAULT NULL,
-  `cpmobileforsms` varchar(255) DEFAULT NULL
+  `cpmobileforsms` varchar(255) DEFAULT NULL,
+  `tax2` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `pinvoice`
 --
 
-INSERT INTO `pinvoice` (`pinvoice_id`, `pinvoice_number`, `pinvodate`, `duedate`, `status`, `emailon`, `printon`, `smson`, `pinvoicetot`, `totpaid`, `balance`, `extracostname`, `extracost`, `template`, `discourate`, `tax1`, `businessname`, `businessaddress`, `companyid`, `customerid`, `productserviceid`, `discount`, `orderid`, `paymentid`, `totalbeforetax`, `quantity`, `terms_of_payment`, `ref`, `documentid`, `paid_n_close`, `subtotal`, `cpemail`, `cpmobileforsms`) VALUES
-(19, 'PINV00007/2022', '2022-10-04', '2022-10-04', 'Draft', 'Never', 'Never', 0, 114135, 0, 114135, '', 40, 'Professional 1 (logo on left side)', 5, 0, 'anu', 'tcr\n\n', NULL, NULL, NULL, 6005, 0, 0, '', 1, 0, '567', 0, 0, 114095, 'ann@gmail.com', '9495332710'),
-(21, 'PINV00009/2022', '2022-10-06', '2022-10-06', 'Paid', 'Never', 'Never', 0, 120124, 248, 119876, '', 0, 'Professional 1 (logo on left side)', 0, 0, 'annnuuuuuuu', 'tvm\n\n\n\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '234', 0, 0, 120124, 's@gmail.com', '9744896278'),
-(22, 'PINV000010/2022', '2022-10-06', '2022-10-06', 'Draft', 'Never', 'Never', 0, 120000, 0, 120000, '', 0, 'Professional 1 (logo on left side)', 0, 0, 'company_IT', 'ekm\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '', 0, 0, 120000, 'cmp@gmail.com', ''),
-(23, 'PINV000011/2022', '2022-10-06', '2022-10-06', 'Draft', 'Never', 'Never', 0, 120000, 0, 120000, '', 0, 'Professional 1 (logo on left side)', 0, 0, 'annnuuuuuuu', 'tvm\n\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '', 0, 0, 120000, 's@gmail.com', '9744896278');
+INSERT INTO `pinvoice` (`pinvoice_id`, `pinvoice_number`, `pinvodate`, `duedate`, `status`, `emailon`, `printon`, `smson`, `pinvoicetot`, `totpaid`, `balance`, `extracostname`, `extracost`, `template`, `discourate`, `tax1`, `businessname`, `businessaddress`, `companyid`, `customerid`, `productserviceid`, `discount`, `orderid`, `paymentid`, `totalbeforetax`, `quantity`, `terms_of_payment`, `ref`, `documentid`, `paid_n_close`, `subtotal`, `cpemail`, `cpmobileforsms`, `tax2`) VALUES
+(19, 'PINV00007/2022', '2022-10-04', '2022-10-04', 'Draft', 'Never', 'Never', 0, 114135, 0, 114135, '', 40, 'Professional 1 (logo on left side)', 5, 0, 'anu', 'tcr\n\n', NULL, NULL, NULL, 6005, 0, 0, '', 1, 0, '567', 0, 0, 114095, 'ann@gmail.com', '9495332710', 0),
+(21, 'PINV00009/2022', '2022-10-06', '2022-10-06', 'Paid', 'Never', 'Never', 0, 120124, 248, 119876, '', 0, 'Professional 1 (logo on left side)', 0, 0, 'annnuuuuuuu', 'tvm\n\n\n\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '234', 0, 0, 120124, 's@gmail.com', '9744896278', 0),
+(22, 'PINV000010/2022', '2022-10-06', '2022-10-06', 'Draft', 'Never', 'Never', 0, 120000, 0, 120000, '', 0, 'Professional 1 (logo on left side)', 0, 0, 'company_IT', 'ekm\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '', 0, 0, 120000, 'cmp@gmail.com', '', 0),
+(23, 'PINV000011/2022', '2022-10-06', '2022-10-06', 'Draft', 'Never', 'Never', 0, 120000, 0, 120000, '', 0, 'Professional 1 (logo on left side)', 0, 0, 'annnuuuuuuu', 'tvm\n\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '', 0, 0, 120000, 's@gmail.com', '9744896278', 0),
+(24, 'PINV000012/2022', '2022-10-17', '2022-10-17', 'Draft', 'Never', 'Never', 0, 120, 0, 120, '', 0, 'Professional 1 (logo on left side)', 0, 0, 'annnuuuuuuu', 'tvm\n\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '', 0, 0, 120, 's@gmail.com', '9744896278', 0),
+(25, 'PINV000013/2022', '2022-10-17', '2022-10-17', 'Draft', 'Never', 'Never', 0, 120000, 0, 120000, '', 0, 'Professional 1 (logo on left side)', 0, 0, 'annnuuuuuuu', 'tvm\n\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '', 0, 0, 120000, 's@gmail.com', '9744896278', 0),
+(26, 'PINV000014/2022', '2022-10-17', '2022-10-17', 'Draft', 'Never', 'Never', 0, 0, 0, 0, '', 0, 'Professional 1 (logo on left side)', 0, 0, 'textiles', 'ekm\n\n', NULL, NULL, NULL, 0, 0, 0, '', 0, 0, '123', 0, 0, 0, 'rahul@gmail.com', '9495332710', 0),
+(27, 'PINV000015/2022', '2022-10-18', '2022-10-18', 'Draft', 'Never', 'Never', 0, 120000, 0, 120000, '', 0, 'Professional 1 (logo on left side)', 0, 0, 'annnuuuuuuu', 'tvm\n\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '', 0, 0, 120000, 's@gmail.com', '9744896278', 0),
+(28, 'PINV000016/2022', '2022-10-21', '2022-10-21', 'Draft', 'Never', 'Never', 0, 118200, 0, 118200, '', 0, 'Professional 1 (logo on left side)', 3, 600, 'textiles', 'ekm\n\n', NULL, NULL, NULL, 2400, 0, 0, '', 1, 0, '', 0, 0, 117612, 'rahul@gmail.com', '9495332710', 588),
+(29, 'PINV000017/2022', '2022-11-10', '2022-11-10', 'Draft', 'Never', 'Never', 0, 120216, 0, 120216, '', 0, 'Professional 1 (logo on left side)', 0, 216, 'shadow', 'tvm\n\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '', 0, 0, 120000, 'shadow@gmail.com', '', 0),
+(30, 'PINV000018/2022', '2022-11-10', '2022-11-10', 'Draft', 'Never', 'Never', 0, 120216, 0, 120216, '', 0, 'Professional 1 (logo on left side)', 0, 216, 'textiles', 'ekm\n\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '', 0, 0, 120000, 'rahul@gmail.com', '9495332710', 0),
+(31, 'PINV000019/2022', '2022-11-10', '2022-11-10', 'Draft', 'Never', 'Never', 0, 240444, 240444, 0, '', 0, 'Professional 1 (logo on left side)', 0, 432, 'textiles', 'ekm\n\n\n', NULL, NULL, NULL, 0, 0, 0, '', 1, 0, '', 0, 0, 240012, 'rahul@gmail.com', '9495332710', 0);
 
 -- --------------------------------------------------------
 
@@ -701,7 +741,10 @@ INSERT INTO `porder` (`porderid`, `companyid`, `porderdate`, `duedate`, `customn
 (49, NULL, '2022-10-03', '2022-10-03', NULL, 'Draft', '0000-00-00', '0000-00-00', NULL, NULL, 0, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', NULL, NULL, 'afdg\n', NULL, NULL, '', '', 'annu', 0, '', '', '', 0, 0, NULL, '', '', '', '', '', '', 'P.ORD000011/2022', '0', '0.00', NULL, '0', 'Not in Demand'),
 (50, NULL, '2022-10-03', '2022-10-03', NULL, 'Draft', '0000-00-00', '0000-00-00', NULL, NULL, 100, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', NULL, NULL, 'afdg\n', NULL, NULL, '', '', 'annu', 100, '', '', '', 0, 0, NULL, '', '', '', '', '', '', 'P.ORD000012/2022', '0', '0.00', NULL, '0', 'In Demand'),
 (52, NULL, '2022-10-06', '2022-10-06', NULL, 'Draft', '0000-00-00', '0000-00-00', NULL, NULL, 12, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', NULL, NULL, 'tvm\n', NULL, NULL, '', '', 'annnuuuuuuu', 12, '', '', '', 0, 0, NULL, '', '', '', '', '', '', 'P.ORD000013/2022', '0', '0.00', NULL, '0', 'In Demand'),
-(54, NULL, '2022-10-06', '2022-10-06', NULL, 'Draft', '0000-00-00', '0000-00-00', NULL, NULL, 120000, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', NULL, NULL, 'ekm\n', NULL, NULL, 'infox@gmail.com', 'anjana', 'infox', 120000, '', '\n', '', 0, 0, NULL, '', '', '', '', '', '', 'P.ORD000014/2022', '0', '0.00', NULL, '0', 'Not in Demand');
+(54, NULL, '2022-10-06', '2022-10-06', NULL, 'Draft', '0000-00-00', '0000-00-00', NULL, NULL, 120000, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', NULL, NULL, 'ekm\n', NULL, NULL, 'infox@gmail.com', 'anjana', 'infox', 120000, '', '\n', '', 0, 0, NULL, '', '', '', '', '', '', 'P.ORD000014/2022', '0', '0.00', NULL, '0', 'Not in Demand'),
+(55, NULL, '2022-10-16', '2022-10-16', NULL, 'Draft', '0000-00-00', '0000-00-00', NULL, NULL, 120000, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', NULL, NULL, 'ekm\n', NULL, NULL, '', '', 'textiles', 120000, '', '', '', 0, 0, NULL, '', '', '', '', '', '', 'P.ORD000015/2022', '0', '0.00', NULL, '0', 'Not in Demand'),
+(56, NULL, '2022-10-17', '2022-10-17', NULL, 'Draft', '0000-00-00', '0000-00-00', NULL, NULL, 120000, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', NULL, NULL, 'tvm\n', NULL, NULL, '', '', 'annnuuuuuuu', 120000, '', '', '', 0, 0, NULL, '', '', '', '', '', '', 'P.ORD000016/2022', '0', '0.00', NULL, '0', 'Not in Demand'),
+(57, NULL, '2022-11-16', '2022-11-16', NULL, 'Draft', '0000-00-00', '0000-00-00', NULL, NULL, 240432, '', 0, 'Professional 1 (logo on left side)', '', 0, 0, '', NULL, NULL, 'ekm\n', NULL, NULL, '', '', 'clothing', 240000, '', '', '', 0, 432, NULL, '', '', '', '', '', '', 'P.ORD000017/2022', '0', '0.00', NULL, '0', 'In Demand');
 
 -- --------------------------------------------------------
 
@@ -737,11 +780,16 @@ CREATE TABLE `productservice` (
 --
 
 INSERT INTO `productservice` (`Productserviceid`, `companyid`, `sku`, `category`, `name`, `description`, `status`, `unitprice`, `peices`, `cost`, `taxable`, `priceminuscost`, `serviceornot`, `stock`, `stocklimit`, `warehouse`, `privatenote`, `image`, `quantity`, `tax2`) VALUES
+(1, NULL, 1, 'Default', 'choclate', 'gdfhghj', '1', '12', 300, '2', '0', '10', '0', 93, 10, '', NULL, NULL, NULL, '0'),
+(2, NULL, 2, 'Default', 'powder', 'atfg', '1', '100', 500, '12', '0', '88', '0', 1190, 100, '', NULL, NULL, NULL, '0'),
+(4, NULL, 3, 'Default', 'shampoo', 'ag', '0', '12', 100, '12', '0', '0', '0', 94, 0, '', NULL, NULL, NULL, '0'),
+(5, NULL, 4, 'Default', 'bangle', 'asdfg', '0', '120', 1200, '13', '0', '107', '0', 98, 10, '', NULL, NULL, NULL, '0'),
+(6, NULL, 5, 'Default', 'broom', 'banaras', '0', '120000', 40, '48000', '1', '72000', '0', 85, 15, 'palarivattam', NULL, NULL, NULL, '0'),
 (377, NULL, 123, 'Default', 'pen', 'gdfhghj', '1', '12', 300, '2', '0', '10.0', '0', 94, 10, NULL, 'ggfh', NULL, NULL, '0'),
-(4556, NULL, 222, 'Default', 'pencil', 'atfg', '1', '100', 500, '12', '0', '88.0', '0', 1189, 100, '', '', '', NULL, '0'),
-(4557, NULL, 12, 'Default', 'clip', 'ag', '0', '12', 100, '12', '0', '0.0', '0', 95, 0, '', '', '', NULL, '0'),
-(4558, NULL, 0, 'Default', 'qqqqq', 'asdfg', '0', '120', 1200, '13', '0', '107.0', '0', 100, 10, '', '', '', NULL, '0'),
-(4559, NULL, 567, 'Default', 'Sareee', 'banaras', '0', '120000', 40, '48000', '0', '72000.0', '0', 95, 15, 'palarivattam', 'slik saree', '', NULL, '0');
+(4556, NULL, 222, 'Default', 'pencil', 'atfg', '1', '100', 500, '12', '0', '88.0', '0', 1190, 100, '', '', '', NULL, '0'),
+(4557, NULL, 12, 'Default', 'clip', 'ag', '0', '12', 100, '12', '0', '0.0', '0', 94, 0, '', '', '', NULL, '0'),
+(4558, NULL, 0, 'Default', 'qqqqq', 'asdfg', '0', '120', 1200, '13', '0', '107.0', '0', 98, 10, '', '', '', NULL, '0'),
+(4559, NULL, 567, '', 'Sareee', 'banaras', '0', '120000', 40, '48000', '1', '72000.0', '0', 75, 15, 'palarivattam', 'slik saree', '', NULL, '0');
 
 -- --------------------------------------------------------
 
@@ -784,7 +832,7 @@ CREATE TABLE `p_invoice_settings` (
 --
 
 INSERT INTO `p_invoice_settings` (`p_invoice_prefix`, `startingp_invoice_number`, `bgcolor`, `p_invoice`, `p_invoice2`, `p_invoice_date`, `order_ref`, `p_invoice_to`, `id_sku`, `product_service`, `quantity`, `description`, `unit_price`, `price`, `subtotal`, `discount`, `discount_rate`, `tax1`, `p_invoice_total`, `total_paid`, `balance`, `tax_exempted`, `page`, `of`, `settingsid`, `companyid`, `terms`) VALUES
-('PINV', '1', '', 'P_Invoice\n', 'P_Invoice#\n', 'P_Invoice date\n', 'Order ref.#\n', 'P_Invoice to\n', 'ID/SKU\n', 'Product/Service\n', 'Quantity\n', 'Description\n', 'Unit Price\n', 'Price\n', 'Subtotal\n', 'Discount\n', 'Discount rate\n', 'TAX1\n', 'P_Invoice Total\n', 'Total Paid\n', 'Balance\n', 'Tax Exempted\n', 'Page\n', 'of\n', 0, NULL, 'Terms\n');
+('PINV', '1', '', 'P_Invoice\n\n\n\n\n\n\n\n\n', 'P_Invoice#\n\n\n\n\n\n\n\n\n', 'P_Invoice date\n\n\n\n\n\n\n\n\n', 'Order ref.#\n\n\n\n\n\n\n\n\n', 'P_Invoice to\n\n\n\n\n\n\n\n\n', 'ID/SKU\n\n\n\n\n\n\n\n\n', 'Product/Service\n\n\n\n\n\n\n\n\n', 'Quantity\n\n\n\n\n\n\n\n\n', 'Description\n\n\n\n\n\n\n\n\n', 'Unit Price\n\n\n\n\n\n\n\n\n', 'Price\n\n\n\n\n\n\n\n\n', 'Subtotal\n\n\n\n\n\n\n\n\n', 'Discount\n\n\n\n\n\n\n\n\n', 'Discount rate\n\n\n\n\n\n\n\n\n', 'TAX1\n\n\n\n\n\n\n\n\n', 'P_Invoice Total\n\n\n\n\n\n\n\n\n', 'Total Paid\n\n\n\n\n\n\n\n\n', 'Balance\n\n\n\n\n\n\n\n\n', 'Tax Exempted\n\n\n\n\n\n\n\n\n', 'Page\n\n\n\n\n\n\n\n\n', 'of\n\n\n\n\n\n\n\n\n', 0, NULL, 'P_Invoice to\n\n\n\n\n\n\n\n\n');
 
 -- --------------------------------------------------------
 
@@ -861,16 +909,10 @@ CREATE TABLE `storingproduct` (
 --
 
 INSERT INTO `storingproduct` (`storingproductid`, `order_number`, `estimate_number`, `invoice_number`, `porder_number`, `sku`, `name`, `description`, `unitprice`, `quantity`, `peices`, `tax1`, `tax2`, `price`, `companyid`, `pinvoice_number`) VALUES
-(596, NULL, NULL, 'INV00008/2022', NULL, '222', 'pencil', 'atfg', 100, 1, 500, NULL, NULL, 100, NULL, ''),
-(597, NULL, NULL, 'INV00008/2022', NULL, '123', 'pen', 'gdfhghj', 12, 1, 300, NULL, NULL, 12, NULL, ''),
-(607, NULL, NULL, 'INV00009/2022', NULL, '12', 'clip', 'ag', 12, 1, 100, 'No', NULL, 12, NULL, ''),
-(613, NULL, NULL, 'INV000010/2022', NULL, '222', 'pencil', 'atfg', 100, 1, 500, 'No', NULL, 100, NULL, ''),
-(622, NULL, NULL, 'INV00005/2022', NULL, '123', 'pen', 'dhtfjtjn', 12, 1, 300, 'No', NULL, 12, NULL, ''),
 (623, NULL, 'EST00000/2022', NULL, NULL, '222', 'pencil', 'atfg', 100, 1, 500, '', NULL, 100, NULL, ''),
 (624, 'ORD00001/2022', NULL, NULL, NULL, '222', 'pencil', 'atfg', 100, 1, 500, 'No', NULL, 100, NULL, ''),
 (630, 'ORD00002/2022', NULL, NULL, NULL, '222', 'pencil', 'atfg', 100, 1, 500, 'No', NULL, 100, NULL, ''),
 (638, NULL, NULL, NULL, 'P.ORD000012/2022', '222', 'pencil', 'atfg', 100, 1, 500, 'No', NULL, 100, NULL, ''),
-(661, NULL, NULL, 'INV000011/2022', NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, ''),
 (672, NULL, NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, 'PINV00007/2022'),
 (673, NULL, NULL, NULL, NULL, '222', 'pencil', 'atfg', 100, 1, 500, 'No', NULL, 100, NULL, 'PINV00007/2022'),
 (685, NULL, NULL, NULL, NULL, '222', 'pencil', 'atfg', 100, 1, 500, 'No', NULL, 100, NULL, 'PINV00009/2022'),
@@ -880,7 +922,50 @@ INSERT INTO `storingproduct` (`storingproductid`, `order_number`, `estimate_numb
 (690, NULL, NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, 'PINV000010/2022'),
 (691, NULL, NULL, NULL, 'P.ORD000013/2022', '123', 'pen', 'gdfhghj', 12, 1, 300, 'No', NULL, 12, NULL, ''),
 (693, NULL, NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, 'PINV000011/2022'),
-(694, NULL, NULL, NULL, 'P.ORD000014/2022', '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, '');
+(694, NULL, NULL, NULL, 'P.ORD000014/2022', '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, ''),
+(695, NULL, NULL, NULL, 'P.ORD000015/2022', '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, ''),
+(696, NULL, NULL, NULL, NULL, '0', 'qqqqq', 'asdfg', 120, 1, 1200, 'No', NULL, 120, NULL, 'PINV000012/2022'),
+(697, NULL, NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, 'No', 120000, NULL, 'PINV000013/2022'),
+(698, NULL, NULL, 'INV000013/2022', NULL, '222', 'pencil', 'atfg', 100, 1, 500, NULL, 'No', 100, NULL, ''),
+(699, NULL, NULL, 'INV000014/2022', NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, 'No', 120000, NULL, ''),
+(700, NULL, NULL, 'INV000014/2022', NULL, '123', 'pen', 'gdfhghj', 12, 1, 300, NULL, 'No', 12, NULL, ''),
+(702, NULL, NULL, NULL, 'P.ORD000016/2022', '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, ''),
+(703, NULL, NULL, 'INV000016/2022', NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, ''),
+(704, NULL, NULL, 'INV000017/2022', NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, 'No', 120000, NULL, ''),
+(705, 'ORD00003/2022', NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, 'No', 120000, NULL, ''),
+(706, 'ORD00003/2022', NULL, NULL, NULL, '12', 'clip', 'ag', 12, 1, 100, NULL, 'No', 12, NULL, ''),
+(707, 'ORD00003/2022', NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, 'No', 120000, NULL, ''),
+(708, NULL, 'EST00001/2022', NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, '', 120000, NULL, ''),
+(709, NULL, NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, 'No', 120000, NULL, 'PINV000015/2022'),
+(710, 'ORD00004/2022', NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, 'No', 120000, NULL, ''),
+(711, 'ORD00004/2022', NULL, NULL, NULL, '222', 'pencil', 'atfg', 100, 1, 500, NULL, 'No', 100, NULL, ''),
+(712, NULL, 'EST00002/2022', NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'yes', '', 120000, NULL, ''),
+(713, NULL, 'EST00002/2022', NULL, NULL, '123', 'pen', 'gdfhghj', 12, 1, 300, '', '', 12, NULL, ''),
+(714, NULL, NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, 'Yes', 120000, NULL, 'PINV000016/2022'),
+(715, NULL, NULL, NULL, NULL, '123', 'pen', 'gdfhghj', 12, 1, 300, NULL, 'No', 12, NULL, 'PINV000016/2022'),
+(718, NULL, NULL, 'INV000018/2022', NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'Yes', NULL, 120000, NULL, ''),
+(719, NULL, NULL, 'INV000018/2022', NULL, '123', 'pen', 'gdfhghj', 12, 1, 300, 'No', NULL, 12, NULL, ''),
+(720, NULL, NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'Yes', NULL, 120000, NULL, 'PINV000017/2022'),
+(721, NULL, NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'Yes', NULL, 120000, NULL, 'PINV000018/2022'),
+(725, NULL, 'EST00003/2022', NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'yes', NULL, 120000, NULL, ''),
+(726, NULL, 'EST00003/2022', NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'yes', NULL, 120000, NULL, ''),
+(727, NULL, NULL, 'INV000019/2022', NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'Yes', NULL, 120000, NULL, ''),
+(728, NULL, 'EST00004/2022', NULL, NULL, '567', 'Sareee', 'banaras', 120000, 4, 40, 'yes', NULL, 480000, NULL, ''),
+(731, NULL, NULL, 'INV000022/2022', NULL, '0', 'qqqqq', 'asdfg', 120, 1, 1200, 'No', NULL, 120, NULL, ''),
+(732, NULL, NULL, NULL, 'P.ORD000017/2022', '567', 'Sareee', 'banaras', 120000, 2, 40, 'yes', NULL, 240000, NULL, ''),
+(733, NULL, NULL, 'INV000023/2022', NULL, '567', 'Sareee', 'banaras', 120000, 4, 40, 'yes', NULL, 480000, NULL, ''),
+(736, NULL, NULL, 'INV000024/2022', NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, ''),
+(737, NULL, NULL, 'INV000024/2022', NULL, '222', 'pencil', 'atfg', 100, 1, 500, 'No', NULL, 100, NULL, ''),
+(740, NULL, NULL, 'INV000026/2022', NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, 'No', 120000, NULL, ''),
+(741, NULL, NULL, 'INV000026/2022', NULL, '12', 'clip', 'ag', 12, 1, 100, NULL, 'No', 12, NULL, ''),
+(742, NULL, NULL, 'INV000026/2022', NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, NULL, 'No', 120000, NULL, ''),
+(745, NULL, NULL, 'INV000025/2022', NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'No', NULL, 120000, NULL, ''),
+(746, NULL, NULL, 'INV000025/2022', NULL, '222', 'pencil', 'atfg', 100, 1, 500, 'No', NULL, 100, NULL, ''),
+(750, NULL, NULL, 'INV000012/2022', NULL, '567', 'Sareee', 'banaras', 120000, 10, 40, 'Yes', NULL, 1200000, NULL, ''),
+(751, NULL, NULL, 'INV00009/2022', NULL, '12', 'clip', 'ag', 12, 1, 100, 'No', NULL, 12, NULL, ''),
+(752, NULL, NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'Yes', NULL, 120000, NULL, 'PINV000019/2022'),
+(753, NULL, NULL, NULL, NULL, '567', 'Sareee', 'banaras', 120000, 1, 40, 'Yes', NULL, 120000, NULL, 'PINV000019/2022'),
+(754, NULL, NULL, NULL, NULL, '12', 'clip', 'ag', 12, 1, 100, 'No', NULL, 12, NULL, 'PINV000019/2022');
 
 -- --------------------------------------------------------
 
@@ -955,7 +1040,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userID`, `companyid`, `displayloginscreen`, `username`, `password`, `confirm_password`, `create_invoice`, `delete_invoice`, `void_invoice`, `mark_invoice_as_paid`, `create_order`, `delete_order`, `turn_order_into_invoice`, `send_sms_nofitication`, `create_estimate`, `delete_estimate`, `turn_oestimate_into_invoice`, `create_expense`, `delete_expense`, `rebill_exprense`, `create_customer`, `delete_customer`, `import_customer`, `create_product_service`, `delete_product_service`, `import_product_service`, `run_reports`, `generate_recurring_invoice`, `create_purchase_order`, `delete_purchase_order`, `modify_invoice_settings`, `modify_order_settings`, `modify_estimate_settings`, `create_pinvoice`, `delete_pinvoice`, `void_pinvoice`, `mark_pinvoice_as_paid`, `modify_pinvoice_settings`) VALUES
-(77, NULL, 0, 'adminstator', '123', '123', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+(77, NULL, 0, 'adminstator', '123', '123', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+(78, NULL, 0, 'anusree', '1234', '1234', 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0),
+(79, NULL, 0, 'sagma', '1234', '1234', 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0),
+(80, NULL, 0, 'anu', '123456', '123456', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 --
 -- Indexes for dumped tables
@@ -1046,6 +1134,12 @@ ALTER TABLE `invoice_settings`
 -- Indexes for table `markinvoice`
 --
 ALTER TABLE `markinvoice`
+  ADD PRIMARY KEY (`payment_id`);
+
+--
+-- Indexes for table `markpinvoice`
+--
+ALTER TABLE `markpinvoice`
   ADD PRIMARY KEY (`payment_id`);
 
 --
@@ -1168,7 +1262,7 @@ ALTER TABLE `company`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `customerid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `customerid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `documents`
@@ -1180,13 +1274,13 @@ ALTER TABLE `documents`
 -- AUTO_INCREMENT for table `estimate`
 --
 ALTER TABLE `estimate`
-  MODIFY `estimateid` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2147483651;
+  MODIFY `estimateid` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2147483655;
 
 --
 -- AUTO_INCREMENT for table `expenses`
 --
 ALTER TABLE `expenses`
-  MODIFY `expensesid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
+  MODIFY `expensesid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
 -- AUTO_INCREMENT for table `extra_cost_name`
@@ -1204,7 +1298,7 @@ ALTER TABLE `header_and_footer`
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
-  MODIFY `invoiceid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `invoiceid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
 
 --
 -- AUTO_INCREMENT for table `invoice_private_notes`
@@ -1216,25 +1310,31 @@ ALTER TABLE `invoice_private_notes`
 -- AUTO_INCREMENT for table `markinvoice`
 --
 ALTER TABLE `markinvoice`
-  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+
+--
+-- AUTO_INCREMENT for table `markpinvoice`
+--
+ALTER TABLE `markpinvoice`
+  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `orderid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
+  MODIFY `orderid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT for table `pinvoice`
 --
 ALTER TABLE `pinvoice`
-  MODIFY `pinvoice_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `pinvoice_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `porder`
 --
 ALTER TABLE `porder`
-  MODIFY `porderid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `porderid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `productservice`
@@ -1264,7 +1364,7 @@ ALTER TABLE `sms_account`
 -- AUTO_INCREMENT for table `storingproduct`
 --
 ALTER TABLE `storingproduct`
-  MODIFY `storingproductid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=695;
+  MODIFY `storingproductid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=755;
 
 --
 -- AUTO_INCREMENT for table `terms_of_payment`
@@ -1276,7 +1376,7 @@ ALTER TABLE `terms_of_payment`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- Constraints for dumped tables
